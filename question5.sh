@@ -18,16 +18,16 @@ avg=$((sum/5))
 if [ $avg -ge 80 ]
 then
         grade="A"
-elif [ $avg -lt 80 ] || [ $avg -ge 70 ]
+elif [ $avg -lt 80 ] && [ $avg -ge 70 ]
 then
         grade="B"
-elif [ $avg -lt 70 ] || [ $avg -ge 60 ]
+elif [ $avg -lt 70 ] && [ $avg -ge 60 ]
 then
         grade="C"
-elif [ $avg -lt 60 ] || [ $avg -ge 50 ]
+elif [ $avg -lt 60 ] && [ $avg -ge 50 ]
 then
         grade="D"
-elif [ $avg -lt 50 ] || [ $avg -ge 40 ]
+elif [ $avg -lt 50 ] && [ $avg -ge 40 ]
 then
         grade="E"
 fi
